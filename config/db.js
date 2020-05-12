@@ -1,7 +1,7 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'bitcube-image'
+const mongooseBaseName = 'whats-next'
 
 // create the mongodb uri for development and test
 const database = {
