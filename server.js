@@ -8,6 +8,7 @@ const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
 const uploadRoutes = require('./app/routes/upload_routes')
 const cardRoutes = require('./app/routes/card_routes')
+const singleCardSpreadRoutes = require('./app/routes/singleCardSpread_routes')
 
 // require middleware
 const errorHandler = require('./lib/error_handler')
@@ -67,6 +68,7 @@ app.use(exampleRoutes)
 app.use(userRoutes)
 app.use(uploadRoutes)
 app.use(cardRoutes)
+app.use(singleCardSpreadRoutes)
 
 // register error handling middleware
 // note that this comes after the route middlewares, because it needs to be
