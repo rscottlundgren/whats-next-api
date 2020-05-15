@@ -74,7 +74,7 @@ router.post('/singleCardSpreads', requireToken, (req, res, next) => {
     // Assigns that card's _id to the firstCard object in the model
     .then(card => {
       req.body.singleCardSpread.firstCardObject = card
-      req.body.singleCardSpread.firstCardId = card._id
+      req.body.singleCardSpread.firstCardId = card.id
       // req.body.singleCardSpread.actualCard = card
       return req.body.singleCardSpread
     })
