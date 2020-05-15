@@ -70,7 +70,10 @@ router.post('/singleCardSpreads', requireToken, (req, res, next) => {
 
     // Looks through the cards in the Tarot Deck and selecting a random whole
     // number and using that to choose the card from that location in the array
-    .then(cards => cards[Math.floor(Math.random() * (cards.length - 1))])
+    .then(cards => {
+      console.log(cards)
+      return cards[Math.floor(Math.random() * (cards.length - 1))]
+    })
     // Assigns that card's _id to the firstCard object in the model
     .then(card => {
       console.log(card)
