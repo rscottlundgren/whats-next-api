@@ -1,52 +1,76 @@
 const mongoose = require('mongoose')
 
 const cardSchema = new mongoose.Schema({
-  coverIMG: {
-    type: String,
-    required: true
-  },
-  analogFaceIMG: {
-    type: String,
-    required: true
-  },
-  echoFaceIMG: {
-    type: String,
-    required: true
-  },
   majorArcana: {
-    cardName: { type: String },
-    cardNumber: { type: Number },
     analog: {
+      analogFaceIMG: {
+        type: String,
+        required: true
+      },
+      coverIMG: {
+        type: String,
+        required: true
+      },
+      cardNumber: { type: Number },
+      cardSuitName: { type: String },
       theme: { type: String },
-      astrology: { type: String },
+      astrology_element: { type: String },
       meaningVertigo: [String],
       keywords: [String]
     },
     echo: {
+      echoFaceIMG: {
+        type: String,
+        required: true
+      },
+      coverIMG: {
+        type: String,
+        required: true
+      },
+      cardNumber: { type: Number },
+      cardSuitName: { type: String },
       theme: { type: String },
-      astrology: { type: String },
+      astrology_element: { type: String },
       meaningVertigo: [String],
       keywords: [String]
     }
   },
   minorArcana: {
-    cardNumber: { type: String },
-    cardSuit: { type: String },
     analog: {
+      cardNumber: { type: String },
+      cardSuitName: { type: String },
+      analogFaceIMG: {
+        type: String,
+        required: true
+      },
+      coverIMG: {
+        type: String,
+        required: true
+      },
       numberKeys: [String],
       courtKeys: [String],
       suitKeys: [String],
-      element: { type: String },
+      astrology_element: { type: String },
       elementKeys: [String],
       theme: { type: String},
       meaningVertigo: [String],
       keywords: [String]
     },
     echo: {
+      cardNumber: { type: String },
+      cardSuitName: { type: String },
+      echoFaceIMG: {
+        type: String,
+        required: true
+      },
+      coverIMG: {
+        type: String,
+        required: true
+      },
       numberKeys: [String],
       courtKeys: [String],
       suitKeys: [String],
-      element: { type: String },
+      astrology_element: { type: String },
       elementKeys: [String],
       theme: { type: String},
       meaningVertigo: [String],

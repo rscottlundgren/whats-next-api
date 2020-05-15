@@ -5,9 +5,14 @@ const singleCardSpreadSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  firstCard: {
+  firstCardObject: {
     type: Object,
     required: false
+  },
+  firstCardId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Card',
+    required: true
   },
   firstCardState: String,
   owner: {
