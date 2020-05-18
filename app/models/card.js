@@ -3,14 +3,8 @@ const mongoose = require('mongoose')
 const cardSchema = new mongoose.Schema({
   majorArcana: {
     analog: {
-      analogFaceIMG: {
-        type: String,
-        required: true
-      },
-      coverIMG: {
-        type: String,
-        required: true
-      },
+      analogFaceIMG: { type: String },
+      coverIMG: { type: String },
       cardNumber: { type: Number },
       cardSuitName: { type: String },
       theme: { type: String },
@@ -19,14 +13,8 @@ const cardSchema = new mongoose.Schema({
       keywords: [String]
     },
     echo: {
-      echoFaceIMG: {
-        type: String,
-        required: true
-      },
-      coverIMG: {
-        type: String,
-        required: true
-      },
+      echoFaceIMG: { type: String },
+      coverIMG: { type: String },
       cardNumber: { type: Number },
       cardSuitName: { type: String },
       theme: { type: String },
@@ -39,14 +27,8 @@ const cardSchema = new mongoose.Schema({
     analog: {
       cardNumber: { type: String },
       cardSuitName: { type: String },
-      analogFaceIMG: {
-        type: String,
-        required: true
-      },
-      coverIMG: {
-        type: String,
-        required: true
-      },
+      analogFaceIMG: { type: String },
+      coverIMG: { type: String },
       numberKeys: [String],
       courtKeys: [String],
       suitKeys: [String],
@@ -59,14 +41,8 @@ const cardSchema = new mongoose.Schema({
     echo: {
       cardNumber: { type: String },
       cardSuitName: { type: String },
-      echoFaceIMG: {
-        type: String,
-        required: true
-      },
-      coverIMG: {
-        type: String,
-        required: true
-      },
+      echoFaceIMG: { type: String },
+      coverIMG: { type: String },
       numberKeys: [String],
       courtKeys: [String],
       suitKeys: [String],
