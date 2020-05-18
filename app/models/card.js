@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 
 const cardSchema = new mongoose.Schema({
+  arcana: { type: String },
   majorArcana: {
     analog: {
       analogFaceIMG: { type: String },
