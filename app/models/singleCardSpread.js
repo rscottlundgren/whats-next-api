@@ -5,6 +5,7 @@ const singleCardSpreadSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  thoughts: { type: String },
   firstCardObject: {
     type: Object,
     required: false
