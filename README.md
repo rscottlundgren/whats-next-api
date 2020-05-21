@@ -36,10 +36,10 @@ Back-End    | GitHub   | https://github.com/rscottlundgren/whats-next-api
 - [ERD](https://i.imgur.com/6Vi6tx9.png)
 
 ## App v1 Images
-![App Image 1](public/image1.png)
-![App Image 2](public/image2.png)
-![App Image 3](public/image3.png)
-![App Image 4](public/image4.png)
+![App Image 1](image1.png)
+![App Image 2](image2.png)
+![App Image 3](image3.png)
+![App Image 4](image4.png)
 
 ## User Stories
 - As an unregistered user, I would like to sign up with email and password.
