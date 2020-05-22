@@ -15,7 +15,10 @@ Back-End    | Website  | https://gentle-cliffs-56174.herokuapp.com/
 Back-End    | GitHub   | https://github.com/rscottlundgren/whats-next-api
 
 ## Installation Instructions
-
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this repository.
+1. Run `npm install` to install all dependencies.
+1. Run `mongoimport --db=whats-next --collection=card --type=json --file=cards.json --drop` to install the card database.
+1. Use `npm start` to spin up the server.
 
 ## List of Technologies Used
 - React template
