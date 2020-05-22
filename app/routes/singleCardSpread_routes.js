@@ -31,7 +31,7 @@ const router = express.Router()
 // INDEX
 // GET /singleCardSpreads
 router.get('/singleCardSpreads', requireToken, (req, res, next) => {
-  SingleCardSpread.find()
+  SingleCardSpread.find({owner: req.user.id})
     .then(singleCardSpreads => {
       // `singleCardSpreads` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
